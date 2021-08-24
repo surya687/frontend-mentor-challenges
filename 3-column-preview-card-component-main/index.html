@@ -7,15 +7,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | 3-column preview card component</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="./style/styles.css">
+
 </head>
 <body>
-  <div class="card">
+  <div class="card-deck">
+  <div class="card card--sedon">
     <img src="./images/icon-sedans.svg" class="card__img" alt="sedan icon">
     <h1 class="card__title">Sedans</h1>
     <p class="card__body">
@@ -24,7 +27,7 @@
     <a class="card__button">Learn More</a>
   </div>
 
-  <div class="card">
+  <div class="card card--suvs ">
     <img src="./images/icon-suvs.svg" class="card__img" alt="suv icon">
     <h1 class="card__title">SUVs</h1>
     <p class="card__body">
@@ -33,7 +36,7 @@
     <a class="card__button">Learn More</a>
   </div>
 
-  <div class="card">
+  <div class="card card--luxury">
     <img src="images/icon-luxury.svg" class="card__img" alt="luxury icon">
     <h1 class="card__title">Luxury</h1>
     <p class="card__body">
@@ -41,6 +44,7 @@
       rental and arrive in style.</p>
     <a class="card__button">Learn More</a>
   </div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
